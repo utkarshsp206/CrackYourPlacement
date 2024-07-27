@@ -12,23 +12,23 @@ public:
             else if(isdigit(c)) post += c;
             else {
                 post += '|';                              // markers to separate numbers
-                while(size(op) && precedence(c) <= precedence(op.top())) 
+                while(sizeof(op) && precedence(c) <= precedence(op.top())) 
                     post += op.top(), op.pop();
                 op.push(c);
             }
         
         post += '|';
-        while(size(op)) 
+        while(sizeof(op)) 
             post += op.top(), op.pop();        
         return post;
     }
     int calculate(string& s) {
         s = toPostfix(s);
         stack<int> num;
-        for(int i = 0; i < size(s); i++) 
+        for(int i = 0; i < sizeof(s); i++) 
             if(isdigit(s[i])) {
                 int cur = 0;
-                while(i < size(s) && isdigit(s[i]))
+                while(i < sizeof(s) && isdigit(s[i]))
                     cur = cur * 10 + (s[i++] - '0');
                 num.push(cur);
             }
