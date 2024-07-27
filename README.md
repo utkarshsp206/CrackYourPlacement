@@ -13,3 +13,4 @@ This challenge is designed to help me improve my DSA skills and increase my chan
 1. Set Matrix Zeros [Leetcode](https://leetcode.com/problems/set-matrix-zeroes/)
 2. 3Sum [Leetcode](https://leetcode.com/problems/3sum/)
 3. Spiral Matrix [Leetcode](https://leetcode.com/problems/spiral-matrix/)
+4. All Unique Permutations of an Array [GFG](https://www.geeksforgeeks.org/problems/all-unique-permutations-of-an-array/)
